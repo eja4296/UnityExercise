@@ -1,0 +1,48 @@
+10/20/2018 1:38:47 PM: MODULE: INFO: Folders initialized for .
+10/20/2018 1:38:47 PM: MODULE: INFO: Found 9 Trials defined in React
+10/20/2018 1:38:47 PM: MODULE: INFO: Game React starting Session React
+10/20/2018 1:38:49 PM: MODULE: INFO: Fail! No response!
+10/20/2018 1:38:50 PM: MODULE: INFO: Fail! No response!
+10/20/2018 1:38:52 PM: MODULE: INFO: Success! responseTime = 0.2315002
+10/20/2018 1:38:53 PM: MODULE: INFO: Success! responseTime = 0.2987085
+10/20/2018 1:38:54 PM: MODULE: INFO: Success! responseTime = 0.264016
+10/20/2018 1:38:56 PM: MODULE: INFO: Success! responseTime = 0.3315598
+10/20/2018 1:38:57 PM: MODULE: INFO: Success! responseTime = 0.3147988
+10/20/2018 1:38:59 PM: MODULE: INFO: Success! responseTime = 0.2655654
+10/20/2018 1:39:01 PM: MODULE: INFO: Success! responseTime = 0.2646274
+10/20/2018 1:39:02 PM: MODULE: INFO: Using output file .\log_files\React_10-20-2018-17-39-02_stats.xml for module React
+10/20/2018 1:42:56 PM: MODULE: INFO: Folders initialized for .
+10/20/2018 1:42:56 PM: MODULE: INFO: Found 9 Trials defined in React
+10/20/2018 1:42:56 PM: MODULE: INFO: Game React starting Session React
+10/20/2018 1:42:57 PM: MODULE: INFO: Success! responseTime = 0.3273991
+10/20/2018 1:42:58 PM: MODULE: INFO: Success! responseTime = 0.579609
+10/20/2018 1:43:00 PM: MODULE: INFO: Success! responseTime = 0.2322277
+10/20/2018 1:43:02 PM: MODULE: INFO: Success! responseTime = 0.2805152
+10/20/2018 1:43:03 PM: MODULE: INFO: Success! responseTime = 0.3156732
+10/20/2018 1:43:05 PM: MODULE: INFO: Success! responseTime = 0.2815152
+10/20/2018 1:43:06 PM: MODULE: INFO: Success! responseTime = 0.281467
+10/20/2018 1:43:08 PM: MODULE: INFO: Success! responseTime = 0.2984226
+10/20/2018 1:43:10 PM: MODULE: INFO: Success! responseTime = 0.2642904
+10/20/2018 1:43:11 PM: MODULE: INFO: Using output file .\log_files\React_10-20-2018-17-43-11_stats.xml for module React
+10/28/2018 11:05:23 AM: MODULE: INFO: Folders initialized for .
+10/28/2018 11:05:23 AM: MODULE: INFO: Found 9 Trials defined in React
+10/28/2018 11:05:23 AM: MODULE: INFO: Game React starting Session React
+10/28/2018 11:11:44 AM: MODULE: INFO: Folders initialized for .
+10/28/2018 11:11:44 AM: MODULE: INFO: Found 9 Trials defined in React
+10/28/2018 11:11:44 AM: MODULE: INFO: Game React starting Session React
+10/28/2018 11:11:58 AM: MODULE: INFO: Folders initialized for .
+10/28/2018 11:11:58 AM: MODULE: INFO: Found 9 Trials defined in React
+10/28/2018 11:11:58 AM: MODULE: INFO: Game React starting Session React
+10/28/2018 11:23:22 AM: MODULE: INFO: Folders initialized for .
+10/28/2018 11:23:22 AM: MODULE: INFO: Found 9 Trials defined in React
+10/28/2018 11:23:22 AM: MODULE: INFO: Game React starting Session React
+10/28/2018 11:23:23 AM: MODULE: INFO: Success! responseTime = 0.5798318
+10/28/2018 11:23:24 AM: MODULE: INFO: Success! responseTime = 0.2471981
+10/28/2018 11:23:26 AM: MODULE: INFO: Success! responseTime = 0.2814114
+10/28/2018 11:23:27 AM: MODULE: INFO: Success! responseTime = 0.3143382
+10/28/2018 11:23:29 AM: MODULE: INFO: Success! responseTime = 0.2653127
+10/28/2018 11:23:31 AM: MODULE: INFO: Success! responseTime = 0.2646153
+10/28/2018 11:23:32 AM: MODULE: INFO: Success! responseTime = 0.2811998
+10/28/2018 11:23:34 AM: MODULE: INFO: Success! responseTime = 0.2481783
+10/28/2018 11:23:36 AM: MODULE: INFO: Success! responseTime = 0.3146623
+10/28/2018 11:23:37 AM: MODULE: INFO: Using output file .\log_files\React_10-28-2018-15-23-37_stats.xml for module React

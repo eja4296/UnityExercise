@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session>
+  <settings>
+    <general gameType="Azzarano" shuffle="true" />
+    <react duration="1" guessTimeLimit="0.125" responseTimeLimit =".8" />
+  </settings>
+  <trials>
+    <trial delay="0.2" positionX="0" positionY="0" red="false"/>
+    <trial delay="0.3" positionX="0" positionY="0" red="false"/>
+    <trial delay="0.3" positionX="0" positionY="0" red="false"/>
+    <trial delay="0.5" positionX="0" positionY="0" red="false"/>
+    <trial delay="0.5" positionX="0" positionY="0" red="false"/>
+    <trial delay="0.5" positionX="0" positionY="0" red="false"/>
+    <trial delay="1.0" positionX="0" positionY="0" red="false"/>
+    <trial delay="1.0" positionX="0" positionY="0" red="false"/>
+    <trial delay="1.0" positionX="0" positionY="0" red="false"/>
+  </trials>
+</session>
