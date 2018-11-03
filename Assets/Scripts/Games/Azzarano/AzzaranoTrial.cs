@@ -14,6 +14,12 @@ public class AzzaranoTrial : Trial
 	/// The duration the stimulus will be shown for.
 	/// </summary>
 	public float duration = 0;
+    public const string ATTRIBUTE_POSITIONX = "positionX";
+    public const string ATTRIBUTE_POSITIONY = "positionY";
+    public const string ATTRIBUTE_RED = "red";
+    public float positionX = 0;
+    public float positionY = 0;
+    public bool red = false;
 
 
 	#region ACCESSORS
@@ -25,11 +31,33 @@ public class AzzaranoTrial : Trial
 			return duration;
 		}
 	}
+    public float PositionX
+    {
+        get
+        {
+            return positionX;
+        }
+    }
+    public float PositionY
+    {
+        get
+        {
+            return positionY;
+        }
+    }
+    public bool Red
+    {
+        get
+        {
+            return red;
+        }
+    }
 
-	#endregion
+
+    #endregion
 
 
-	public AzzaranoTrial(SessionData data, XmlElement n = null) 
+    public AzzaranoTrial(SessionData data, XmlElement n = null) 
 		: base(data, n)
 	{
 	}
@@ -49,7 +77,11 @@ public class AzzaranoTrial : Trial
 		{
 			duration = data.GeneratedDuration;
 		}
-	}
+
+        XMLUtil.ParseAttribute(n, ATTRIBUTE_POSITIONX, ref positionX);
+        XMLUtil.ParseAttribute(n, ATTRIBUTE_POSITIONY, ref positionY);
+        XMLUtil.ParseAttribute(n, ATTRIBUTE_RED, ref red);
+    }
 
 
 	/// <summary>

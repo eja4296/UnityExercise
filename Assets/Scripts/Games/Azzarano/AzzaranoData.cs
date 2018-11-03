@@ -12,12 +12,12 @@ public class AzzaranoData : GameData
 {
 	const string ATTRIBUTE_GUESS_TIMELIMIT = "guessTimeLimit";
 	const string ATTRIBUTE_RESPONSE_TIMELIMIT = "responseTimeLimit";
-	public const string ATTRIBUTE_DURATION = "duration";
+    public const string ATTRIBUTE_DURATION = "duration";
 
-	/// <summary>
-	/// The amount of time that needs to pass before the player can respond without being penalized.
-	/// </summary>
-	private float guessTimeLimit = 0;
+    /// <summary>
+    /// The amount of time that needs to pass before the player can respond without being penalized.
+    /// </summary>
+    private float guessTimeLimit = 0;
 	/// <summary>
 	/// The amount of time that the user has to respond; 
 	/// Starts when input becomes enabled during a Trial. 

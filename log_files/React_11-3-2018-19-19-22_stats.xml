@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<session>
+  <results>
+    <result index="0" success="False" responseTime="0" accuracy="0" />
+    <result index="1" success="True" responseTime="0.2812397" accuracy="0.7685338" />
+    <result index="2" success="True" responseTime="0.2647889" accuracy="0.7929053" />
+    <result index="3" success="True" responseTime="0.2652826" accuracy="0.7921739" />
+    <result index="4" success="False" responseTime="0" accuracy="0" />
+    <result index="5" success="True" responseTime="0.3819673" accuracy="0.6193077" />
+    <result index="6" success="False" responseTime="0" accuracy="0" />
+    <result index="7" success="True" responseTime="0.3645441" accuracy="0.6451198" />
+    <result index="8" success="True" responseTime="0.3311156" accuracy="0.6946436" />
+  </results>
+  <settings>
+    <general gameType="React" shuffle="True" />
+    <react guessTimeLimit="0.125" responseTimeLimit="0.8" duration="1" />
+  </settings>
+  <trials>
+    <trial index="0" delay="0.5" duration="1" />
+    <trial index="1" delay="1" duration="1" />
+    <trial index="2" delay="1" duration="1" />
+    <trial index="3" delay="1" duration="1" />
+    <trial index="4" delay="0.3" duration="1" />
+    <trial index="5" delay="0.5" duration="1" />
+    <trial index="6" delay="0.5" duration="1" />
+    <trial index="7" delay="0.2" duration="1" />
+    <trial index="8" delay="0.3" duration="1" />
+  </trials>
+</session>
