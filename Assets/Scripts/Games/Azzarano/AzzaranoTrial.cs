@@ -14,9 +14,7 @@ public class AzzaranoTrial : Trial
 	/// The duration the stimulus will be shown for.
 	/// </summary>
 	public float duration = 0;
-    public const string ATTRIBUTE_POSITIONX = "positionX";
-    public const string ATTRIBUTE_POSITIONY = "positionY";
-    public const string ATTRIBUTE_RED = "red";
+    
     public float positionX = 0;
     public float positionY = 0;
     public bool red = false;
@@ -78,9 +76,9 @@ public class AzzaranoTrial : Trial
 			duration = data.GeneratedDuration;
 		}
 
-        XMLUtil.ParseAttribute(n, ATTRIBUTE_POSITIONX, ref positionX);
-        XMLUtil.ParseAttribute(n, ATTRIBUTE_POSITIONY, ref positionY);
-        XMLUtil.ParseAttribute(n, ATTRIBUTE_RED, ref red);
+        XMLUtil.ParseAttribute(n, AzzaranoData.ATTRIBUTE_POSITIONX, ref positionX);
+        XMLUtil.ParseAttribute(n, AzzaranoData.ATTRIBUTE_POSITIONY, ref positionY);
+        XMLUtil.ParseAttribute(n, AzzaranoData.ATTRIBUTE_RED, ref red);
     }
 
 
@@ -91,5 +89,8 @@ public class AzzaranoTrial : Trial
 	{
 		base.WriteOutputData(ref elem);
 		XMLUtil.CreateAttribute(AzzaranoData.ATTRIBUTE_DURATION, duration.ToString(), ref elem);
-	}
+        XMLUtil.CreateAttribute(AzzaranoData.ATTRIBUTE_POSITIONX, positionX.ToString(), ref elem);
+        XMLUtil.CreateAttribute(AzzaranoData.ATTRIBUTE_POSITIONY, positionY.ToString(), ref elem);
+        XMLUtil.CreateAttribute(AzzaranoData.ATTRIBUTE_RED, red.ToString(), ref elem);
+    }
 }

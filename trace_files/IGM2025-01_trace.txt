@@ -132,3 +132,16 @@ Object reference not set to an instance of an object
 11/3/2018 4:44:35 PM: MODULE: INFO: Success! responseTime = 0.2817464
 11/3/2018 4:44:36 PM: MODULE: INFO: Success! responseTime = 0.3146661
 11/3/2018 4:44:38 PM: MODULE: INFO: Using output file .\unfinished_files\Azzarano_11-3-2018-20-44-38_stats.xml for module Azzarano
+11/3/2018 4:50:19 PM: MODULE: INFO: Folders initialized for .
+11/3/2018 4:50:19 PM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/3/2018 4:50:19 PM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/3/2018 4:50:20 PM: MODULE: INFO: Success! responseTime = 0.4139416
+11/3/2018 4:50:21 PM: MODULE: INFO: Success! responseTime = 0.2653106
+11/3/2018 4:50:22 PM: MODULE: INFO: Success! responseTime = 0.3809933
+11/3/2018 4:50:24 PM: MODULE: INFO: Success! responseTime = 0.2646478
+11/3/2018 4:50:26 PM: MODULE: INFO: Success! responseTime = 0.2827663
+11/3/2018 4:50:28 PM: MODULE: INFO: Success! responseTime = 0.3322359
+11/3/2018 4:50:30 PM: MODULE: INFO: Success! responseTime = 0.4153838
+11/3/2018 4:50:31 PM: MODULE: INFO: Success! responseTime = 0.3311368
+11/3/2018 4:50:33 PM: MODULE: INFO: Success! responseTime = 0.3311317
+11/3/2018 4:50:33 PM: MODULE: INFO: Using output file .\log_files\Azzarano_11-3-2018-20-50-33_stats.xml for module Azzarano

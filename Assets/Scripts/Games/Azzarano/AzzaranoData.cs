@@ -14,6 +14,10 @@ public class AzzaranoData : GameData
 	const string ATTRIBUTE_RESPONSE_TIMELIMIT = "responseTimeLimit";
     public const string ATTRIBUTE_DURATION = "duration";
 
+    public const string ATTRIBUTE_POSITIONX = "positionX";
+    public const string ATTRIBUTE_POSITIONY = "positionY";
+    public const string ATTRIBUTE_RED = "red";
+
     /// <summary>
     /// The amount of time that needs to pass before the player can respond without being penalized.
     /// </summary>
