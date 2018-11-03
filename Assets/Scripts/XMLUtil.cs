@@ -26,10 +26,11 @@ public static class XMLUtil
 	#region ELEM CONSTANTS
 
 	// Gametype elements.
-	public const string ELEM_REACT = "react";	
+	public const string ELEM_REACT = "react";
+    public const string ELEM_AZZARANO = "azzarano";
 
-	// General elements.
-	const string ELEM_SESSIONS = "sessions";
+    // General elements.
+    const string ELEM_SESSIONS = "sessions";
 	const string ELEM_SESSION = "session";
 	const string ELEM_SETTINGS = "settings";
 	const string ELEM_GENERAL = "general";
@@ -106,7 +107,11 @@ public static class XMLUtil
 					sData.gameData = new ReactData(n as XmlElement);
 					break;
 
-				default:
+                case ELEM_AZZARANO:
+                    sData.gameData = new AzzaranoData(n as XmlElement);
+                    break;
+
+                default:
 					break;
 			}
 		}

@@ -2,7 +2,7 @@
 <session>
   <settings>
     <general gameType="Azzarano" shuffle="true" />
-    <react duration="1" guessTimeLimit="0.125" responseTimeLimit =".8" />
+    <azzarano duration="1" guessTimeLimit="0.125" responseTimeLimit =".8" />
   </settings>
   <trials>
     <trial delay="0.2" positionX="0" positionY="0" red="false"/>

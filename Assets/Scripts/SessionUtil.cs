@@ -18,7 +18,8 @@ public static class SessionUtil
 		{
 			case GameType.React:
 				return new ReactTrial(data, elem);
-
+            case GameType.Azzarano:
+                return new AzzaranoTrial(data, elem);
 			default:
 				return new Trial(data, elem);
 		}
@@ -34,7 +35,8 @@ public static class SessionUtil
 		{
 			case GameType.React:
 				return XMLUtil.ELEM_REACT;
-
+            case GameType.Azzarano:
+                return XMLUtil.ELEM_AZZARANO;
 			default:
 				return string.Empty;
 		}
