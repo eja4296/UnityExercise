@@ -14,10 +14,11 @@ public class AzzaranoTrial : Trial
 	/// The duration the stimulus will be shown for.
 	/// </summary>
 	public float duration = 0;
-    
+
+    public string position = "random";
     public float positionX = 0;
     public float positionY = 0;
-    public bool red = false;
+    public string red = "false";
 
 
 	#region ACCESSORS
@@ -43,7 +44,7 @@ public class AzzaranoTrial : Trial
             return positionY;
         }
     }
-    public bool Red
+    public string Red
     {
         get
         {
@@ -76,9 +77,11 @@ public class AzzaranoTrial : Trial
 			duration = data.GeneratedDuration;
 		}
 
+        XMLUtil.ParseAttribute(n, AzzaranoData.ATTRIBUTE_POSITION, ref position);
         XMLUtil.ParseAttribute(n, AzzaranoData.ATTRIBUTE_POSITIONX, ref positionX);
         XMLUtil.ParseAttribute(n, AzzaranoData.ATTRIBUTE_POSITIONY, ref positionY);
-        XMLUtil.ParseAttribute(n, AzzaranoData.ATTRIBUTE_RED, ref red);
+        XMLUtil.ParseAttribute(n, AzzaranoData.ATTRIBUTE_RED, ref red, true);
+        
     }
 
 
@@ -89,6 +92,7 @@ public class AzzaranoTrial : Trial
 	{
 		base.WriteOutputData(ref elem);
 		XMLUtil.CreateAttribute(AzzaranoData.ATTRIBUTE_DURATION, duration.ToString(), ref elem);
+        XMLUtil.CreateAttribute(AzzaranoData.ATTRIBUTE_POSITION, position.ToString(), ref elem);
         XMLUtil.CreateAttribute(AzzaranoData.ATTRIBUTE_POSITIONX, positionX.ToString(), ref elem);
         XMLUtil.CreateAttribute(AzzaranoData.ATTRIBUTE_POSITIONY, positionY.ToString(), ref elem);
         XMLUtil.CreateAttribute(AzzaranoData.ATTRIBUTE_RED, red.ToString(), ref elem);

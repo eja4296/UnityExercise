@@ -5,14 +5,14 @@
     <azzarano duration="1" guessTimeLimit="0.125" responseTimeLimit =".8" />
   </settings>
   <trials>
-    <trial delay="0.2" positionX="0" positionY="0" red="false"/>
-    <trial delay="0.3" positionX="0" positionY="0" red="false"/>
-    <trial delay="0.3" positionX="0" positionY="0" red="false"/>
-    <trial delay="0.5" positionX="0" positionY="0" red="false"/>
-    <trial delay="0.5" positionX="0" positionY="0" red="false"/>
-    <trial delay="0.5" positionX="0" positionY="0" red="false"/>
-    <trial delay="1.0" positionX="0" positionY="0" red="false"/>
-    <trial delay="1.0" positionX="0" positionY="0" red="false"/>
-    <trial delay="1.0" positionX="0" positionY="0" red="false"/>
+    <trial delay="0.2" position="predefined" positionX="0" positionY="50" red="false"/>
+    <trial delay="0.3" position="random" positionX="50" positionY="50" red="true"/>
+    <trial delay="0.3" position="predefined" positionX="50" positionY="100" red="false"/>
+    <trial delay="0.5" position="random" positionX="75" positionY="75" red="false"/>
+    <trial delay="0.5" position="predefined" positionX="-50" positionY="25" red="true"/>
+    <trial delay="0.5" position="predefined" positionX="25" positionY="-75" red="false"/>
+    <trial delay="1.0" position="random" positionX="100" positionY="100" red="false"/>
+    <trial delay="1.0" position="predefined" positionX="25" positionY="75" red="true"/>
+    <trial delay="1.0" position="predefined" positionX="-100" positionY="0" red="false"/>
   </trials>
 </session>

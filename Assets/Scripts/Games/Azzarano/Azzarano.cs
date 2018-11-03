@@ -16,6 +16,7 @@ public class Azzarano : GameBase
 	const string FINISHED = "FINISHED!";
 	const string RESPONSE_GUESS = "No Guessing!";
 	const string RESPONSE_CORRECT = "Good!";
+    const string RESPONSE_HITRED = "Don't hit RED!";
 	const string RESPONSE_TIMEOUT = "Missed it!";
 	const string RESPONSE_SLOW = "Too Slow!";
 	Color RESPONSE_COLOR_GOOD = Color.green;
@@ -76,11 +77,33 @@ public class Azzarano : GameBase
 	protected virtual IEnumerator DisplayStimulus(Trial t)
 	{
 		GameObject stim = stimulus;
+        
 		stim.SetActive(false);
 
 		yield return new WaitForSeconds(t.delay);
 
-		StartInput();
+        if(((AzzaranoTrial)t).position == "predefined")
+        {
+            stim.GetComponent<RectTransform>().localPosition = new Vector3(((AzzaranoTrial)t).positionX, ((AzzaranoTrial)t).positionY, 0);
+        }
+        else
+        {
+            float randX = Random.Range(0, ((AzzaranoTrial)t).positionX);
+            float randY = Random.Range(0, ((AzzaranoTrial)t).positionY);
+            stim.GetComponent<RectTransform>().localPosition = new Vector3(randX, randY, 0);
+        }
+
+        if (((AzzaranoTrial)t).red == "true")
+        {
+            stim.GetComponent<Image>().color = new Color(255, 0, 0);
+            
+        }
+        else
+        {
+            stim.GetComponent<Image>().color = new Color(255, 255, 255);
+        }
+
+        StartInput();
 		stim.SetActive(true);
 
 		yield return new WaitForSeconds(((AzzaranoTrial)t).duration);
@@ -130,9 +153,21 @@ public class Azzarano : GameBase
 		r.responseTime = time;
 		if (time == 0)
 		{
-			// No response.
-			DisplayFeedback(RESPONSE_TIMEOUT, RESPONSE_COLOR_BAD);
-			GUILog.Log("Fail! No response!");
+            if (((AzzaranoTrial)t).red == "false")
+            {
+                // No response.
+                DisplayFeedback(RESPONSE_TIMEOUT, RESPONSE_COLOR_BAD);
+                GUILog.Log("Fail! No response!");
+            }
+            else
+            {
+                // Responded correctly.
+                DisplayFeedback(RESPONSE_CORRECT, RESPONSE_COLOR_GOOD);
+                r.success = true;
+                r.accuracy = GetAccuracy(t, time);
+                GUILog.Log("Success! responseTime = {0}", time);
+            }
+                
 		}
 		else
 		{
@@ -144,17 +179,41 @@ public class Azzarano : GameBase
 			}
 			else if (IsValidResponse(time))
 			{
-				// Responded correctly.
-				DisplayFeedback(RESPONSE_CORRECT, RESPONSE_COLOR_GOOD);
-				r.success = true;
-				r.accuracy = GetAccuracy(t, time);
-				GUILog.Log("Success! responseTime = {0}", time);
+                if(((AzzaranoTrial)t).red == "false")
+                {
+                    // Responded correctly.
+                    DisplayFeedback(RESPONSE_CORRECT, RESPONSE_COLOR_GOOD);
+                    r.success = true;
+                    r.accuracy = GetAccuracy(t, time);
+                    GUILog.Log("Success! responseTime = {0}", time);
+                }
+                else
+                {
+                    // Responded correctly.
+                    DisplayFeedback(RESPONSE_HITRED, RESPONSE_COLOR_BAD);
+                    //r.success = true;
+                    //r.accuracy = GetAccuracy(t, time);
+                    GUILog.Log("Fail! Not supposed to respond to RED");
+                }
+				
 			}
 			else
 			{
-				// Responded too slow.
-				DisplayFeedback(RESPONSE_SLOW, RESPONSE_COLOR_BAD);
-				GUILog.Log("Fail! Slow response! responseTime = {0}", time);
+                if (((AzzaranoTrial)t).red == "false")
+                {
+                    // Responded too slow.
+                    DisplayFeedback(RESPONSE_SLOW, RESPONSE_COLOR_BAD);
+                    GUILog.Log("Fail! Slow response! responseTime = {0}", time);
+                }
+                else
+                {
+                    // Responded correctly.
+                    DisplayFeedback(RESPONSE_CORRECT, RESPONSE_COLOR_GOOD);
+                    r.success = true;
+                    r.accuracy = GetAccuracy(t, time);
+                    GUILog.Log("Success! responseTime = {0}", time);
+                }
+                    
 			}
 		}
 		sessionData.results.Add(r);

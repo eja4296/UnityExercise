@@ -14,6 +14,7 @@ public class AzzaranoData : GameData
 	const string ATTRIBUTE_RESPONSE_TIMELIMIT = "responseTimeLimit";
     public const string ATTRIBUTE_DURATION = "duration";
 
+    public const string ATTRIBUTE_POSITION = "position";
     public const string ATTRIBUTE_POSITIONX = "positionX";
     public const string ATTRIBUTE_POSITIONY = "positionY";
     public const string ATTRIBUTE_RED = "red";
