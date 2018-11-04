@@ -22,6 +22,9 @@ public class Azzarano : GameBase
 	Color RESPONSE_COLOR_GOOD = Color.green;
 	Color RESPONSE_COLOR_BAD = Color.red;
 
+    int trials = 0;
+    int score = 0;
+
 	/// <summary>
 	/// A reference to the UI canvas so we can instantiate the feedback text.
 	/// </summary>
@@ -65,6 +68,7 @@ public class Azzarano : GameBase
 			yield return StartCoroutine(DisplayStimulus(t));
 			EndTrial(t);
 		}
+        trials = data.trials.Count;
 		FinishedSession();
 		yield break;
 	}
@@ -122,6 +126,8 @@ public class Azzarano : GameBase
 	{
 		base.FinishedSession();
 		instructionsText.text = FINISHED;
+        instructionsText.text += "\nScore: " + score + "/" + trials;
+            
 	}
 
 
@@ -166,6 +172,7 @@ public class Azzarano : GameBase
                 r.success = true;
                 r.accuracy = GetAccuracy(t, time);
                 GUILog.Log("Success! responseTime = {0}", time);
+                score += 1;
             }
                 
 		}
@@ -186,6 +193,7 @@ public class Azzarano : GameBase
                     r.success = true;
                     r.accuracy = GetAccuracy(t, time);
                     GUILog.Log("Success! responseTime = {0}", time);
+                    score += 1;
                 }
                 else
                 {
@@ -212,6 +220,7 @@ public class Azzarano : GameBase
                     r.success = true;
                     r.accuracy = GetAccuracy(t, time);
                     GUILog.Log("Success! responseTime = {0}", time);
+                    score += 1;
                 }
                     
 			}

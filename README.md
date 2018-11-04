@@ -57,5 +57,5 @@ In this game you should be able to:
 
 For your submission, extend this README documenting the rules of the new game, how the code works, how scoring works in the new game, and any other interesting or useful things you can think of for us to take into consideration. Then zip the git repository and send it to us.
 
-# My new Game - Azzarano
+# My new game - Azzarano
 Coming soon...
