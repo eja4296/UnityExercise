@@ -84,13 +84,13 @@ public class Azzarano : GameBase
 
         if(((AzzaranoTrial)t).position == "predefined")
         {
-            stim.GetComponent<RectTransform>().localPosition = new Vector3(((AzzaranoTrial)t).positionX, ((AzzaranoTrial)t).positionY, 0);
+            stim.GetComponent<RectTransform>().localPosition = new Vector3(((AzzaranoTrial)t).positionX * 50, ((AzzaranoTrial)t).positionY * 50, 0);
         }
         else
         {
-            float randX = Random.Range(0, ((AzzaranoTrial)t).positionX);
-            float randY = Random.Range(0, ((AzzaranoTrial)t).positionY);
-            stim.GetComponent<RectTransform>().localPosition = new Vector3(randX, randY, 0);
+            float randX = Random.Range(-2, 2);
+            float randY = Random.Range(-2, 2);
+            stim.GetComponent<RectTransform>().localPosition = new Vector3(randX * 50, randY * 50, 0);
         }
 
         if (((AzzaranoTrial)t).red == "true")

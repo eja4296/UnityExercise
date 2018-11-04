@@ -46,3 +46,50 @@
 10/28/2018 11:23:34 AM: MODULE: INFO: Success! responseTime = 0.2481783
 10/28/2018 11:23:36 AM: MODULE: INFO: Success! responseTime = 0.3146623
 10/28/2018 11:23:37 AM: MODULE: INFO: Using output file .\log_files\React_10-28-2018-15-23-37_stats.xml for module React
+11/4/2018 10:59:30 AM: MODULE: INFO: Folders initialized for .
+11/4/2018 10:59:30 AM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/4/2018 10:59:30 AM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/4/2018 10:59:31 AM: MODULE: INFO: Fail! Not supposed to respond to RED
+11/4/2018 10:59:33 AM: MODULE: INFO: Success! responseTime = 0.3981316
+11/4/2018 10:59:34 AM: MODULE: INFO: Success! responseTime = 0.3640937
+11/4/2018 10:59:35 AM: MODULE: INFO: Fail! Not supposed to respond to RED
+11/4/2018 10:59:37 AM: MODULE: INFO: Success! responseTime = 0.3314724
+11/4/2018 10:59:39 AM: MODULE: INFO: Success! responseTime = 0.3320164
+11/4/2018 10:59:40 AM: MODULE: INFO: Success! responseTime = 0.3473523
+11/4/2018 10:59:42 AM: MODULE: INFO: Success! responseTime = 0.4306225
+11/4/2018 10:59:44 AM: MODULE: INFO: Fail! Not supposed to respond to RED
+11/4/2018 10:59:44 AM: MODULE: INFO: Using output file .\log_files\Azzarano_11-4-2018-15-59-44_stats.xml for module Azzarano
+11/4/2018 11:07:17 AM: MODULE: INFO: Folders initialized for .
+11/4/2018 11:07:17 AM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/4/2018 11:07:17 AM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/4/2018 11:07:18 AM: MODULE: INFO: Success! responseTime = 0.4793711
+11/4/2018 11:07:20 AM: MODULE: INFO: Success! responseTime = 0.3971159
+11/4/2018 11:07:21 AM: MODULE: INFO: Success! responseTime = 0.3481131
+11/4/2018 11:07:23 AM: MODULE: INFO: Success! responseTime = 0.3803675
+11/4/2018 11:07:25 AM: MODULE: INFO: Using output file .\unfinished_files\Azzarano_11-4-2018-16-07-25_stats.xml for module Azzarano
+11/4/2018 11:12:17 AM: MODULE: INFO: Folders initialized for .
+11/4/2018 11:12:17 AM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/4/2018 11:12:17 AM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/4/2018 11:12:19 AM: MODULE: INFO: Success! responseTime = 0.3472983
+11/4/2018 11:12:21 AM: MODULE: INFO: Success! responseTime = 0.4132425
+11/4/2018 11:12:22 AM: MODULE: INFO: Success! responseTime = 0.4476887
+11/4/2018 11:12:25 AM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 11:12:26 AM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 11:12:27 AM: MODULE: INFO: Success! responseTime = 0.5303818
+11/4/2018 11:12:29 AM: MODULE: INFO: Success! responseTime = 0.4963062
+11/4/2018 11:12:31 AM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 11:12:31 AM: MODULE: INFO: Success! responseTime = 0.4299582
+11/4/2018 11:12:32 AM: MODULE: INFO: Using output file .\log_files\Azzarano_11-4-2018-16-12-32_stats.xml for module Azzarano
+11/4/2018 11:12:57 AM: MODULE: INFO: Folders initialized for .
+11/4/2018 11:12:57 AM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/4/2018 11:12:57 AM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/4/2018 11:12:58 AM: MODULE: INFO: Success! responseTime = 0.4472099
+11/4/2018 11:13:00 AM: MODULE: INFO: Success! responseTime = 0.597299
+11/4/2018 11:13:02 AM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 11:13:03 AM: MODULE: INFO: Success! responseTime = 0.3307007
+11/4/2018 11:13:05 AM: MODULE: INFO: Success! responseTime = 0.4478356
+11/4/2018 11:13:07 AM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 11:13:09 AM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 11:13:09 AM: MODULE: INFO: Success! responseTime = 0.4474396
+11/4/2018 11:13:11 AM: MODULE: INFO: Success! responseTime = 0.4147844
+11/4/2018 11:13:12 AM: MODULE: INFO: Using output file .\log_files\Azzarano_11-4-2018-16-13-12_stats.xml for module Azzarano
