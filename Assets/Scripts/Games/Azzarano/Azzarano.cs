@@ -124,7 +124,8 @@ public class Azzarano : GameBase
 	/// </summary>
 	protected override void FinishedSession()
 	{
-		base.FinishedSession();
+        GUILog.Log("Score: {0} / {1}", score, trials);
+        base.FinishedSession();
 		instructionsText.text = FINISHED;
         instructionsText.text += "\nScore: " + score + "/" + trials;
             

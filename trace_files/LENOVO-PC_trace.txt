@@ -137,3 +137,31 @@
 11/4/2018 11:47:13 AM: MODULE: INFO: Success! responseTime = 0.3472169
 11/4/2018 11:47:15 AM: MODULE: INFO: Success! responseTime = 0
 11/4/2018 11:47:15 AM: MODULE: INFO: Using output file .\log_files\Azzarano_11-4-2018-16-47-15_stats.xml for module Azzarano
+11/4/2018 3:54:51 PM: MODULE: INFO: Folders initialized for .
+11/4/2018 3:54:51 PM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/4/2018 3:54:51 PM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/4/2018 3:54:53 PM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 3:54:54 PM: MODULE: INFO: Success! responseTime = 0.2815913
+11/4/2018 3:54:57 PM: MODULE: INFO: Success! responseTime = 0.3316541
+11/4/2018 3:54:59 PM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 3:55:00 PM: MODULE: INFO: Success! responseTime = 0.381054
+11/4/2018 3:55:01 PM: MODULE: INFO: Success! responseTime = 0.3650126
+11/4/2018 3:55:02 PM: MODULE: INFO: Success! responseTime = 0.364803
+11/4/2018 3:55:04 PM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 3:55:05 PM: MODULE: INFO: Success! responseTime = 0.3659881
+11/4/2018 3:55:06 PM: MODULE: INFO: Sscore: 9
+11/4/2018 3:55:06 PM: MODULE: INFO: Using output file .\log_files\Azzarano_11-4-2018-20-55-06_stats.xml for module Azzarano
+11/4/2018 3:55:46 PM: MODULE: INFO: Folders initialized for .
+11/4/2018 3:55:46 PM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/4/2018 3:55:46 PM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/4/2018 3:55:49 PM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 3:55:50 PM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 3:55:51 PM: MODULE: INFO: Success! responseTime = 0.5624116
+11/4/2018 3:55:53 PM: MODULE: INFO: Success! responseTime = 0.6453892
+11/4/2018 3:55:55 PM: MODULE: INFO: Success! responseTime = 0.7454157
+11/4/2018 3:55:56 PM: MODULE: INFO: Fail! No response!
+11/4/2018 3:55:58 PM: MODULE: INFO: Fail! Slow response! responseTime = 0.8292637
+11/4/2018 3:55:59 PM: MODULE: INFO: Success! responseTime = 0.4148713
+11/4/2018 3:56:01 PM: MODULE: INFO: Success! responseTime = 0
+11/4/2018 3:56:01 PM: MODULE: INFO: Score: 7 / 9
+11/4/2018 3:56:01 PM: MODULE: INFO: Using output file .\log_files\Azzarano_11-4-2018-20-56-01_stats.xml for module Azzarano

@@ -58,4 +58,15 @@ In this game you should be able to:
 For your submission, extend this README documenting the rules of the new game, how the code works, how scoring works in the new game, and any other interesting or useful things you can think of for us to take into consideration. Then zip the git repository and send it to us.
 
 # My new game - Azzarano
-Coming soon...
+My new game builds on React, where the player must press the 'spacebar' as soon as a square appears on the screen for a number of trials. 
+
+## New Features
+- Stimulus Position: The stimulus square is placed in somewhere in a 5x5 zone depending on the "position" that is specified in the session file. It can be predefined or random. If it is predefined, it uses the 'positionX' and 'positionY' values to determine the position 'x' and 'y' position. These values should be integers ranging from -2 to +2. If it is random, the x and y positions of the stimulus square are each set to a random integer between -2 and +2.
+- Stimulus Color: The stimulus square can be colored red. This can be done in the session file by setting 'red' to true. If the stimulus square appears red in the game, the player should not press the 'spacebar.' If they do, it will be marked wrong, but if they let it pass it will be marked as correct.
+- Score: After all trials are compelted, the player's score is displayed. The score is the number of correct responses divded by the total number of trials. Each trial result, as well as the final score, are logged in the trace file.
+
+## Use Case
+The 5x5 zone included in my game would presumably be a strike zone . The inner 3x3 zone would be for strikes and the outer for balls. You could set the session file trials to target particular zones. This could mean making certain zones red because you want a player to avoid those zones.
+
+## Where to go next
+...
