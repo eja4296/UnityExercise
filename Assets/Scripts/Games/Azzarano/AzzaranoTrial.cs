@@ -15,10 +15,10 @@ public class AzzaranoTrial : Trial
 	/// </summary>
 	public float duration = 0;
 
-    public string position = "random";
-    public float positionX = 0;
-    public float positionY = 0;
-    public string red = "false";
+    public string position = "random"; // random or predefined
+    public int positionX = 0; // integer between -2 and 2
+    public int positionY = 0; // integer between -2 and 2
+    public string red = "false"; // true or false
 
 
 	#region ACCESSORS
@@ -30,14 +30,14 @@ public class AzzaranoTrial : Trial
 			return duration;
 		}
 	}
-    public float PositionX
+    public int PositionX
     {
         get
         {
             return positionX;
         }
     }
-    public float PositionY
+    public int PositionY
     {
         get
         {
@@ -51,6 +51,7 @@ public class AzzaranoTrial : Trial
             return red;
         }
     }
+
 
 
     #endregion

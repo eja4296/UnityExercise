@@ -61,12 +61,16 @@ For your submission, extend this README documenting the rules of the new game, h
 My new game builds on React, where the player must press the 'spacebar' as soon as a square appears on the screen for a number of trials. 
 
 ## New Features
-- Stimulus Position: The stimulus square is placed in somewhere in a 5x5 zone depending on the "position" that is specified in the session file. It can be predefined or random. If it is predefined, it uses the 'positionX' and 'positionY' values to determine the position 'x' and 'y' position. These values should be integers ranging from -2 to +2. If it is random, the x and y positions of the stimulus square are each set to a random integer between -2 and +2.
-- Stimulus Color: The stimulus square can be colored red. This can be done in the session file by setting 'red' to true. If the stimulus square appears red in the game, the player should not press the 'spacebar.' If they do, it will be marked wrong, but if they let it pass it will be marked as correct.
+- Stimulus Position: The stimulus square is placed in somewhere in a 5x5 zone (3x3 "strike zone: represented by large grey box) depending on the 'position' that is specified in the session file. It can be predefined or random. If it is predefined, it uses the 'positionX' and 'positionY' values to determine the 'x' and 'y' position. These values should be integers ranging from -2 to +2. If it is random, the 'x' and 'y' positions of the stimulus square are each set to a random integer between -2 and +2. The two integer values will place the stimulus in one of the 25 possible zone locations.
+- Strike Zone: As stated, a 3x3 "strike zone" is represented on the screen by the slightly transparent larger white box. The stimulus square will appear both inside and outside of the zone, depending on the position it is given. If it is inside the strike zone, the player should respond to it by pressing 'spacebar.' If it is outside the strike zone, the player should not respond to it.
+- Stimulus Color: The stimulus square can be colored red. This can be done in the session file by setting 'red' to true. If the stimulus square appears red in the game, the player should not respond to it by pressing the 'spacebar.' If they do, it will be marked wrong, but if they let it pass it will be marked as correct.
 - Score: After all trials are compelted, the player's score is displayed. The score is the number of correct responses divded by the total number of trials. Each trial result, as well as the final score, are logged in the trace file.
 
+## How to run the game
+In the Executables_UnityExercise folder, run the 'UnityExercise.exe'
+
 ## Use Case
-The 5x5 zone included in my game would presumably be a strike zone . The inner 3x3 zone would be for strikes and the outer for balls. You could set the session file trials to target particular zones. This could mean making certain zones red because you want a player to avoid those zones.
+The 3x3 zone included in my game would presumably be a strike zone in baseball. You could set the session file trials to target particular zones, both inside and outside the 3x3 square. This could mean making certain zones red because you want a player to practice avoiding those zones.
 
 ## Where to go next
-...
+Using my game as a base, the obvious next step would be to add a third dimension to the game. Having a ball moving toward the zones at different velocities and with different spin would allow for more realistic hitting training. Taking it even further, with Unity's VR capabilities, you could provide an extremely realistic hitting situation for a player in a virtual space.

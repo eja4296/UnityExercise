@@ -165,3 +165,71 @@
 11/4/2018 3:56:01 PM: MODULE: INFO: Success! responseTime = 0
 11/4/2018 3:56:01 PM: MODULE: INFO: Score: 7 / 9
 11/4/2018 3:56:01 PM: MODULE: INFO: Using output file .\log_files\Azzarano_11-4-2018-20-56-01_stats.xml for module Azzarano
+11/5/2018 7:33:23 AM: MODULE: INFO: Folders initialized for .
+11/5/2018 7:33:23 AM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/5/2018 7:33:23 AM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/5/2018 7:33:24 AM: MODULE: INFO: Success! responseTime = 0.3138082
+11/5/2018 7:33:26 AM: MODULE: INFO: Success! responseTime = 0.3640865
+11/5/2018 7:33:28 AM: MODULE: INFO: Success! responseTime = 0.5794145
+11/5/2018 7:33:29 AM: MODULE: INFO: Success! responseTime = 0.4632291
+11/5/2018 7:33:30 AM: MODULE: INFO: Success! responseTime = 0.3802692
+11/5/2018 7:33:33 AM: MODULE: INFO: Success! responseTime = 0
+11/5/2018 7:33:35 AM: MODULE: INFO: Success! responseTime = 0
+11/5/2018 7:33:35 AM: MODULE: INFO: Success! responseTime = 0.3647189
+11/5/2018 7:33:37 AM: MODULE: INFO: Success! responseTime = 0
+11/5/2018 7:33:37 AM: MODULE: INFO: Score: 9 / 9
+11/5/2018 7:33:37 AM: MODULE: INFO: Using output file .\log_files\Azzarano_11-5-2018-12-33-37_stats.xml for module Azzarano
+11/5/2018 9:35:35 AM: MODULE: INFO: Folders initialized for .
+11/5/2018 9:35:35 AM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/5/2018 9:35:35 AM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/5/2018 9:35:37 AM: MODULE: INFO: Success! responseTime = 0.4135185
+11/5/2018 9:35:38 AM: MODULE: INFO: Fail! Not supposed to respond to BALL
+11/5/2018 9:35:40 AM: MODULE: INFO: Fail! Not supposed to respond to BALL
+11/5/2018 9:35:41 AM: MODULE: INFO: Fail! Not supposed to respond to BALL
+11/5/2018 9:35:43 AM: MODULE: INFO: Fail! Not supposed to respond to RED
+11/5/2018 9:35:44 AM: MODULE: INFO: Success! Didn't respond to BALL.
+11/5/2018 9:35:46 AM: MODULE: INFO: Success! Didn't respond to RED.
+11/5/2018 9:35:48 AM: MODULE: INFO: Success! Didn't respond to BALL.
+11/5/2018 9:35:48 AM: MODULE: INFO: Using output file .\unfinished_files\Azzarano_11-5-2018-14-35-48_stats.xml for module Azzarano
+11/5/2018 9:36:13 AM: MODULE: INFO: Folders initialized for .
+11/5/2018 9:36:13 AM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/5/2018 9:36:13 AM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/5/2018 9:36:15 AM: MODULE: INFO: Success! Didn't respond to RED.
+11/5/2018 9:36:16 AM: MODULE: INFO: Success! Didn't respond to RED.
+11/5/2018 9:36:17 AM: MODULE: INFO: Success! responseTime = 0.5291386
+11/5/2018 9:36:19 AM: MODULE: INFO: Success! Didn't respond to BALL.
+11/5/2018 9:36:20 AM: MODULE: INFO: Success! responseTime = 0.4474388
+11/5/2018 9:36:21 AM: MODULE: INFO: Fail! Not supposed to respond to BALL
+11/5/2018 9:36:23 AM: MODULE: INFO: Success! Didn't respond to RED.
+11/5/2018 9:36:25 AM: MODULE: INFO: Success! responseTime = 0.6291888
+11/5/2018 9:36:27 AM: MODULE: INFO: Success! responseTime = 0.6455941
+11/5/2018 9:36:27 AM: MODULE: INFO: Score: 8 / 9
+11/5/2018 9:36:27 AM: MODULE: INFO: Using output file .\log_files\Azzarano_11-5-2018-14-36-27_stats.xml for module Azzarano
+11/5/2018 9:38:51 AM: MODULE: INFO: Folders initialized for .
+11/5/2018 9:38:51 AM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/5/2018 9:38:51 AM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/5/2018 9:38:53 AM: MODULE: INFO: Fail! Not supposed to respond to RED
+11/5/2018 9:38:54 AM: MODULE: INFO: Fail! Not supposed to respond to RED
+11/5/2018 9:38:56 AM: MODULE: INFO: Success! Didn't respond to RED.
+11/5/2018 9:38:57 AM: MODULE: INFO: Success! responseTime = 0.4153557
+11/5/2018 9:38:59 AM: MODULE: INFO: Success! Didn't respond to BALL.
+11/5/2018 9:39:00 AM: MODULE: INFO: Success! responseTime = 0.4971313
+11/5/2018 9:39:02 AM: MODULE: INFO: Fail! Not supposed to respond to BALL
+11/5/2018 9:39:04 AM: MODULE: INFO: Success! Didn't respond to BALL.
+11/5/2018 9:39:05 AM: MODULE: INFO: Success! responseTime = 0.4641809
+11/5/2018 9:39:06 AM: MODULE: INFO: Score: 6 / 9
+11/5/2018 9:39:06 AM: MODULE: INFO: Using output file .\log_files\Azzarano_11-5-2018-14-39-06_stats.xml for module Azzarano
+11/5/2018 9:39:11 AM: MODULE: INFO: Folders initialized for .
+11/5/2018 9:39:11 AM: MODULE: INFO: Found 9 Trials defined in Azzarano
+11/5/2018 9:39:11 AM: MODULE: INFO: Game Azzarano starting Session Azzarano
+11/5/2018 9:39:13 AM: MODULE: INFO: Success! responseTime = 0.446941
+11/5/2018 9:39:14 AM: MODULE: INFO: Fail! Not supposed to respond to BALL
+11/5/2018 9:39:17 AM: MODULE: INFO: Fail! No response!
+11/5/2018 9:39:18 AM: MODULE: INFO: Fail! Not supposed to respond to RED
+11/5/2018 9:39:19 AM: MODULE: INFO: Success! responseTime = 0.729006
+11/5/2018 9:39:21 AM: MODULE: INFO: Fail! Not supposed to respond to RED
+11/5/2018 9:39:23 AM: MODULE: INFO: Success! Didn't respond to RED.
+11/5/2018 9:39:24 AM: MODULE: INFO: Fail! Not supposed to respond to BALL
+11/5/2018 9:39:26 AM: MODULE: INFO: Fail! Not supposed to respond to BALL
+11/5/2018 9:39:26 AM: MODULE: INFO: Score: 3 / 9
+11/5/2018 9:39:26 AM: MODULE: INFO: Using output file .\log_files\Azzarano_11-5-2018-14-39-26_stats.xml for module Azzarano

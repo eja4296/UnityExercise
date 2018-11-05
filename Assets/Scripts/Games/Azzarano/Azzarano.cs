@@ -17,6 +17,7 @@ public class Azzarano : GameBase
 	const string RESPONSE_GUESS = "No Guessing!";
 	const string RESPONSE_CORRECT = "Good!";
     const string RESPONSE_HITRED = "Don't hit RED!";
+    const string RESPONSE_HITBALL = "Don't hit BALL!";
 	const string RESPONSE_TIMEOUT = "Missed it!";
 	const string RESPONSE_SLOW = "Too Slow!";
 	Color RESPONSE_COLOR_GOOD = Color.green;
@@ -24,6 +25,7 @@ public class Azzarano : GameBase
 
     int trials = 0;
     int score = 0;
+    bool ball = false;
 
 	/// <summary>
 	/// A reference to the UI canvas so we can instantiate the feedback text.
@@ -86,21 +88,35 @@ public class Azzarano : GameBase
 
 		yield return new WaitForSeconds(t.delay);
 
+        ball = false;
+
+        // Check how the position will be determined
         if(((AzzaranoTrial)t).position == "predefined")
         {
+            // Set the position to the incoming 'positionX' and 'positionY' values
             stim.GetComponent<RectTransform>().localPosition = new Vector3(((AzzaranoTrial)t).positionX * 50, ((AzzaranoTrial)t).positionY * 50, 0);
+
+            if(((AzzaranoTrial)t).positionX >= 2 || ((AzzaranoTrial)t).positionX <= -2 || ((AzzaranoTrial)t).positionY >= 2 || ((AzzaranoTrial)t).positionY <= -2){
+                ball = true;
+            }
         }
         else
         {
+            // Set the position to be random
             float randX = Random.Range(-2, 2);
             float randY = Random.Range(-2, 2);
             stim.GetComponent<RectTransform>().localPosition = new Vector3(randX * 50, randY * 50, 0);
+
+            if (randX >= 2 || randX <= -2 || randY >= 2 || randY <= -2)
+            {
+                ball = true;
+            }
         }
 
+        // Check if the stimulus square should be red or white
         if (((AzzaranoTrial)t).red == "true")
         {
             stim.GetComponent<Image>().color = new Color(255, 0, 0);
-            
         }
         else
         {
@@ -160,11 +176,19 @@ public class Azzarano : GameBase
 		r.responseTime = time;
 		if (time == 0)
 		{
-            if (((AzzaranoTrial)t).red == "false")
+            if (((AzzaranoTrial)t).red == "false" && ball == false)
             {
                 // No response.
                 DisplayFeedback(RESPONSE_TIMEOUT, RESPONSE_COLOR_BAD);
                 GUILog.Log("Fail! No response!");
+            }
+            else if (((AzzaranoTrial)t).red == "false" && ball == true)
+            {
+                DisplayFeedback(RESPONSE_CORRECT, RESPONSE_COLOR_GOOD);
+                r.success = true;
+                r.accuracy = GetAccuracy(t, time);
+                GUILog.Log("Success! Didn't respond to BALL.");
+                score += 1;
             }
             else
             {
@@ -172,7 +196,7 @@ public class Azzarano : GameBase
                 DisplayFeedback(RESPONSE_CORRECT, RESPONSE_COLOR_GOOD);
                 r.success = true;
                 r.accuracy = GetAccuracy(t, time);
-                GUILog.Log("Success! responseTime = {0}", time);
+                GUILog.Log("Success! Didn't respond to RED.");
                 score += 1;
             }
                 
@@ -187,7 +211,7 @@ public class Azzarano : GameBase
 			}
 			else if (IsValidResponse(time))
 			{
-                if(((AzzaranoTrial)t).red == "false")
+                if(((AzzaranoTrial)t).red == "false" && ball == false)
                 {
                     // Responded correctly.
                     DisplayFeedback(RESPONSE_CORRECT, RESPONSE_COLOR_GOOD);
@@ -196,32 +220,39 @@ public class Azzarano : GameBase
                     GUILog.Log("Success! responseTime = {0}", time);
                     score += 1;
                 }
+                else if(((AzzaranoTrial)t).red == "false" && ball == true)
+                {
+                    // Responded incorrectly.
+                    DisplayFeedback(RESPONSE_HITBALL, RESPONSE_COLOR_BAD);
+                    GUILog.Log("Fail! Not supposed to respond to BALL");
+                }
                 else
                 {
-                    // Responded correctly.
+                    // Responded incorrectly.
                     DisplayFeedback(RESPONSE_HITRED, RESPONSE_COLOR_BAD);
-                    //r.success = true;
-                    //r.accuracy = GetAccuracy(t, time);
                     GUILog.Log("Fail! Not supposed to respond to RED");
                 }
 				
 			}
 			else
 			{
-                if (((AzzaranoTrial)t).red == "false")
+                if (((AzzaranoTrial)t).red == "false" && ball == false)
                 {
                     // Responded too slow.
                     DisplayFeedback(RESPONSE_SLOW, RESPONSE_COLOR_BAD);
                     GUILog.Log("Fail! Slow response! responseTime = {0}", time);
                 }
+                else if (((AzzaranoTrial)t).red == "false" && ball == true)
+                {
+                    // Responded incorrectly.
+                    DisplayFeedback(RESPONSE_HITBALL, RESPONSE_COLOR_BAD);
+                    GUILog.Log("Fail! Not supposed to respond to BALL");
+                }
                 else
                 {
-                    // Responded correctly.
-                    DisplayFeedback(RESPONSE_CORRECT, RESPONSE_COLOR_GOOD);
-                    r.success = true;
-                    r.accuracy = GetAccuracy(t, time);
-                    GUILog.Log("Success! responseTime = {0}", time);
-                    score += 1;
+                    // Responded incorrectly.
+                    DisplayFeedback(RESPONSE_HITRED, RESPONSE_COLOR_BAD);
+                    GUILog.Log("Fail! Not supposed to respond to RED");
                 }
                     
 			}

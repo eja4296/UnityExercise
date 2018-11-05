@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<session>
+  <results>
+    <result index="0" success="True" responseTime="0.4135185" accuracy="0.5725652" />
+    <result index="1" success="False" responseTime="0.5459518" accuracy="0" />
+    <result index="2" success="False" responseTime="0.4974203" accuracy="0" />
+    <result index="3" success="False" responseTime="0.4480408" accuracy="0" />
+    <result index="4" success="False" responseTime="0.6287869" accuracy="0" />
+    <result index="5" success="True" responseTime="0" accuracy="1.185185" />
+    <result index="6" success="True" responseTime="0" accuracy="1.185185" />
+    <result index="7" success="True" responseTime="0" accuracy="1.185185" />
+  </results>
+  <settings>
+    <general gameType="Azzarano" shuffle="True" />
+    <azzarano guessTimeLimit="0.125" responseTimeLimit="0.8" duration="1" />
+  </settings>
+  <trials>
+    <trial index="0" delay="1" duration="1" position="predefined" positionX="0" positionY="0" red="false" />
+    <trial index="1" delay="0.3" duration="1" position="predefined" positionX="0" positionY="2" red="false" />
+    <trial index="2" delay="0.5" duration="1" position="predefined" positionX="2" positionY="1" red="false" />
+    <trial index="3" delay="0.5" duration="1" position="random" positionX="0" positionY="0" red="false" />
+    <trial index="4" delay="0.5" duration="1" position="predefined" positionX="1" positionY="0" red="true" />
+    <trial index="5" delay="0.2" duration="1" position="predefined" positionX="-1" positionY="-1" red="false" />
+    <trial index="6" delay="1" duration="1" position="predefined" positionX="-1" positionY="-2" red="true" />
+    <trial index="7" delay="1" duration="1" position="random" positionX="0" positionY="0" red="false" />
+    <trial index="8" delay="0.3" duration="1" position="random" positionX="0" positionY="0" red="true" />
+  </trials>
+</session>
